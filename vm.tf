@@ -16,7 +16,6 @@ sudo curl -H "Metadata:true" --noproxy "*" "http://169.254.169.254/metadata/inst
 CUSTOM_DATA
 }
 
-
 resource "azurerm_linux_virtual_machine" "webserver" {
   name                = "${var.web_subnet_name}-web-linuxvm"
   location            = azurerm_resource_group.rg.location

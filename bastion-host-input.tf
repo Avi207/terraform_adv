@@ -18,6 +18,6 @@ variable "bastion_subnet_address" {
 }
 
 variable "source_address_range" {
-  type = list(string)
-  default = [ "172.173.236.101/32" ]
+  type = string
+  default = "172.173.236.101/32" 
 }

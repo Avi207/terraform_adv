@@ -10,7 +10,6 @@ resource "azurerm_network_interface" "web_linuxvm_nic" {
    
   }
 }
-
 resource "azurerm_network_interface" "app_linuxvm_nic" {
    name                = "${var.app_subnet_name}-app-linuxvm-nic"
   location            = azurerm_resource_group.rg.location
